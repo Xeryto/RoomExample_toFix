@@ -9,7 +9,19 @@ import androidx.room.Query;
 import androidx.room.Update;
 import ru.pavlenty.roomexample.room.Task;
 
+//data access object
 @Dao
 public interface TaskDao {
 
+    @Query("SELECT * FROM task")
+    List<Task> getAll();
+
+    @Insert
+    void insert(Task t);
+
+    @Delete
+    void delete(Task t);
+
+    @Update
+    void update(Task t);
 }

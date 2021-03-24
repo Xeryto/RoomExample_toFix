@@ -8,6 +8,6 @@ import ru.pavlenty.roomexample.room.TaskDao;
 
 @Database(entities = {Task.class}, version = 1)
 public abstract class AppDB extends RoomDatabase {
-
+    public abstract TaskDao taskDao();
 
 }

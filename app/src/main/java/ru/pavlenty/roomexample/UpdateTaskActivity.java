@@ -29,7 +29,7 @@ public class UpdateTaskActivity extends AppCompatActivity {
         checkBoxFinished = findViewById(R.id.checkBoxFinished);
 
         final Task task = (Task) getIntent().getSerializableExtra("task");
-
+        loadTask(task);
 
 
         findViewById(R.id.button_update).setOnClickListener(new View.OnClickListener() {

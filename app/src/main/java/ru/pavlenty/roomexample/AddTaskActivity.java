@@ -25,7 +25,7 @@ public class AddTaskActivity extends AppCompatActivity {
         findViewById(R.id.button_save).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                saveTask();
             }
         });
     }
